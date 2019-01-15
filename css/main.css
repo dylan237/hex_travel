@@ -1,0 +1,521 @@
+@charset "UTF-8";
+/* 基本文字顏色 */
+/* 文字連結樣式，多則就再新增2、3... */
+/* 滑鼠拖曳過後的樣式顏色 */
+/* 全域字型大小，如一網站有多種就下多種字型 */
+/* 背景色 */
+/* 全域行距 */
+/* 網站整體寬度 */
+/* 全域字型 */
+/* btn style */
+/* line 1, ../sass/_reset.scss */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, form, label, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* line 10, ../sass/_reset.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 14, ../sass/_reset.scss */
+body {
+  line-height: 1.2;
+}
+
+/* line 18, ../sass/_reset.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 22, ../sass/_reset.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 27, ../sass/_reset.scss */
+blockquote:before, blockquote:after {
+  content: '';
+  content: none;
+}
+
+/* line 34, ../sass/_reset.scss */
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* line 40, ../sass/_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 45, ../sass/_reset.scss */
+html, body {
+  font-size: 13px;
+  color: #292929;
+}
+
+/* 
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+	background-color: #000000 !important;
+	background-image: none;
+	color: #fff !important;
+}*/
+/* line 59, ../sass/_reset.scss */
+input:-webkit-autofill {
+  background-color: #0e0e0e;
+  box-shadow: 0 0 0 400px #0e0e0e inset;
+  -webkit-box-shadow: 0 0 0 400px #0e0e0e inset;
+  -webkit-text-fill-color: #8c8c8c;
+}
+
+/* line 66, ../sass/_reset.scss */
+a {
+  color: #292929;
+  text-decoration: none;
+  -webkit-transition: .3s ease-out;
+  transition: .3s ease-out;
+}
+/* line 72, ../sass/_reset.scss */
+a:hover {
+  color: #fff;
+}
+
+/* line 1, ../sass/_layout.scss */
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  outline: none;
+}
+
+/* line 5, ../sass/_layout.scss */
+body {
+  font-family: "Microsoft JhengHei", "Helvetica Nueue", Arial, Sans Serif;
+  overflow-x: hidden;
+}
+
+/* line 14, ../sass/_layout.scss */
+.wrap {
+  max-width: 1024px;
+  margin: 0 auto;
+  background-color: #F7F7F7;
+  position: relative;
+}
+
+/* line 21, ../sass/_layout.scss */
+.header {
+  width: 100%;
+  background-image: url(https://hexschool.github.io/JavaScript_HomeWork/assets/the-urban-landscape-1698285.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 380px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* line 36, ../sass/_layout.scss */
+.header h1 {
+  color: #fff;
+  font-size: 40px;
+  padding: 30px 0;
+}
+/* line 41, ../sass/_layout.scss */
+.header select {
+  width: 250px;
+  height: 45px;
+  background-color: rgba(255, 255, 255, 0.7);
+  border: 4px solid #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* line 53, ../sass/_layout.scss */
+.content {
+  padding: 120px 40px 50px 40px;
+  min-height: calc(100vh - 480px);
+}
+
+@media screen and (max-width: 768px) {
+  /* line 58, ../sass/_layout.scss */
+  .content {
+    padding: 20px 10px;
+  }
+}
+/* line 63, ../sass/_layout.scss */
+.footer {
+  background-color: #559AC8;
+  width: 100%;
+  padding: 30px 0;
+  text-align: center;
+  color: #fff;
+}
+
+/* line 3, ../sass/_index.scss */
+.header h1 {
+  color: #fff;
+  font-size: 40px;
+  padding: 30px 0;
+}
+/* line 8, ../sass/_index.scss */
+.header select {
+  width: 250px;
+  height: 45px;
+  background-color: rgba(255, 255, 255, 0.7);
+  border: 3px solid #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* line 20, ../sass/_index.scss */
+.btnArea {
+  width: 70%;
+  position: absolute;
+  bottom: -70px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 15px;
+  background-color: #fff;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+/* line 34, ../sass/_index.scss */
+.btnArea h2 {
+  color: #000;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+  /* line 41, ../sass/_index.scss */
+  .btnArea {
+    width: 100%;
+    bottom: 0;
+    border-radius: 0;
+    background-color: rgba(255, 255, 255, 0.9);
+  }
+
+  /* line 47, ../sass/_index.scss */
+  h2 {
+    display: none;
+  }
+}
+/* line 53, ../sass/_index.scss */
+.btnArea-inner {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* line 58, ../sass/_index.scss */
+.decLine {
+  border-bottom: 2px dashed #559AC8;
+  height: 2px;
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+}
+/* line 64, ../sass/_index.scss */
+.decLine .circle {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translate(-50%, -50%);
+  height: 24px;
+  width: 24px;
+  background: #F7F7F7;
+  border: 2px solid #559AC8;
+  border-radius: 50%;
+}
+/* line 74, ../sass/_index.scss */
+.decLine .circle .symbol {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -30%);
+  width: 20px;
+  height: 10px;
+  overflow: hidden;
+}
+/* line 82, ../sass/_index.scss */
+.decLine .circle .symbol::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 9px;
+  height: 9px;
+  background: #559AC8;
+  transform: translate(-50%, -100%) rotate(45deg);
+}
+
+/* line 95, ../sass/_index.scss */
+.areaTitle {
+  font-size: 36px;
+  color: #8A82CC;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+/* line 103, ../sass/_index.scss */
+.footer h2 {
+  margin-bottom: 10px;
+  color: #FFD366;
+}
+
+@media screen and (max-width: 768px) {
+  /* line 109, ../sass/_index.scss */
+  .decLine {
+    display: none;
+  }
+
+  /* line 112, ../sass/_index.scss */
+  .areaTitle {
+    display: none;
+  }
+}
+/* line 1, ../sass/_utilities.scss */
+.btn {
+  width: 23%;
+  height: 35px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  transition: 0.5s ease;
+}
+/* line 9, ../sass/_utilities.scss */
+.btn:active {
+  border: 2px solid #949494;
+  transform: scale(0.95);
+}
+/* line 13, ../sass/_utilities.scss */
+.btn:hover {
+  opacity: 0.75;
+}
+
+@media (max-width: 768px) {
+  /* line 18, ../sass/_utilities.scss */
+  .btn {
+    width: 49%;
+    margin-bottom: 5px;
+  }
+}
+/* line 23, ../sass/_utilities.scss */
+.btn-1 {
+  background-color: #8A82CC;
+}
+
+/* line 26, ../sass/_utilities.scss */
+.btn-2 {
+  background-color: #FFA782;
+}
+
+/* line 29, ../sass/_utilities.scss */
+.btn-3 {
+  background-color: #F5D105;
+}
+
+/* line 32, ../sass/_utilities.scss */
+.btn-4 {
+  background-color: #559AC8;
+}
+
+/* line 35, ../sass/_utilities.scss */
+#goTopBtn {
+  background: url(https://hexschool.github.io/JavaScript_HomeWork/assets/btn_goTop.png);
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  right: 8px;
+  cursor: pointer;
+}
+
+/* line 44, ../sass/_utilities.scss */
+.favorite, .del {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+/* line 55, ../sass/_utilities.scss */
+.favorite:active, .del:active {
+  filter: brightness(1.1);
+  transform: scale(0.95);
+}
+/* line 59, ../sass/_utilities.scss */
+.favorite:hover, .del:hover {
+  filter: brightness(1.1);
+}
+
+/* line 64, ../sass/_utilities.scss */
+.favorite {
+  background-image: url("https://upload.cc/i1/2019/01/03/whfloW.png");
+}
+
+/* line 67, ../sass/_utilities.scss */
+.del {
+  background-image: url("https://upload.cc/i1/2018/12/26/FDNEpG.png");
+}
+
+/* line 71, ../sass/_utilities.scss */
+.list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* line 76, ../sass/_utilities.scss */
+.listCard {
+  flex: 0 0 49%;
+  margin-right: 2%;
+  margin-bottom: 2%;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+}
+/* line 83, ../sass/_utilities.scss */
+.listCard:nth-child(even) {
+  margin-right: 0;
+}
+/* line 86, ../sass/_utilities.scss */
+.listCard .cardTop {
+  background-image: url(http://khh.travel/FileArtPic.ashx?id=2424&w=1280&h=960);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 20px;
+  height: 170px;
+  color: #fff;
+  position: relative;
+}
+/* line 96, ../sass/_utilities.scss */
+.listCard .cardTop h3 {
+  font-size: 2rem;
+}
+/* line 99, ../sass/_utilities.scss */
+.listCard .cardTop p {
+  font-size: 1.1rem;
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+}
+/* line 106, ../sass/_utilities.scss */
+.listCard .cardBottom {
+  padding: 20px;
+  background-color: #fff;
+  position: relative;
+}
+/* line 110, ../sass/_utilities.scss */
+.listCard .cardBottom > * {
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+/* line 114, ../sass/_utilities.scss */
+.listCard .cardBottom > :last-child {
+  margin-bottom: 0;
+  /* position: absolute; */
+  /* bottom: 20px; */
+  /* right: 20px; */
+  text-align: right;
+  margin-top: 15px;
+}
+/* line 122, ../sass/_utilities.scss */
+.listCard .cardBottom > :nth-last-child(2) {
+  margin-bottom: 0;
+}
+/* line 125, ../sass/_utilities.scss */
+.listCard .cardBottom .type {
+  color: #aaaaaa;
+}
+
+@media screen and (max-width: 414px) {
+  /* line 131, ../sass/_utilities.scss */
+  .listCard {
+    flex: 0 0 100%;
+    margin-right: 0px;
+  }
+}
+/* line 136, ../sass/_utilities.scss */
+.time::before,
+.add::before,
+.tel::before,
+.type::before {
+  content: '';
+  display: inline-block;
+  margin-right: 10px;
+  vertical-align: bottom;
+  width: 20px;
+  height: 20px;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+}
+
+/* line 149, ../sass/_utilities.scss */
+.time::before {
+  background: url(https://hexschool.github.io/JavaScript_HomeWork/assets/icons_clock.png);
+}
+
+/* line 152, ../sass/_utilities.scss */
+.add::before {
+  background: url(https://hexschool.github.io/JavaScript_HomeWork/assets/icons_pin.png);
+}
+
+/* line 155, ../sass/_utilities.scss */
+.tel::before {
+  background: url(https://hexschool.github.io/JavaScript_HomeWork/assets/icons_phone.png);
+}
+
+/* line 88, icon/*.png */
+.icon-sprite, .icon-fb, .icon-qq, .icon-sina {
+  background-image: url('/images/icon-se0964fa95d.png');
+  background-repeat: no-repeat;
+}
+
+/* line 84, D:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-fb {
+  background-position: 0 0;
+}
+/* line 59, D:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-fb:hover, .icon-fb.fb-hover {
+  background-position: -50px 0;
+}
+
+/* line 84, D:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-qq {
+  background-position: -100px 0;
+}
+/* line 59, D:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-qq:hover, .icon-qq.qq-hover {
+  background-position: -150px 0;
+}
+
+/* line 84, D:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-sina {
+  background-position: -200px 0;
+}
+/* line 59, D:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-sina:hover, .icon-sina.sina-hover {
+  background-position: -250px 0;
+}
+
+/*# sourceMappingURL=main.css.map */
