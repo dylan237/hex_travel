@@ -1,0 +1,161 @@
+.btn {
+    width: 23%;
+    height: 35px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    transition: 0.5s ease;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
+    &:active {
+        border: 2px solid rgb(148, 148, 148);
+        transform: scale(0.95);
+    }
+    &:hover {
+        opacity: 0.75;
+    }
+}
+@media (max-width: 768px) {
+    .btn {
+        width: 49%;
+        margin-bottom: 5px;
+    }
+}
+.btn-1 {
+    background-color: $btn-1; 
+}
+.btn-2 {
+    background-color: $btn-2;
+}
+.btn-3 {
+    background-color: $btn-3;
+}
+.btn-4 {
+    background-color: $btn-4;
+}
+#goTopBtn {
+    background: url(https://hexschool.github.io/JavaScript_HomeWork/assets/btn_goTop.png);
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    right: 8px;
+    cursor: pointer;
+}
+
+.favorite, .del {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    cursor: pointer;
+    transition: 0.5s ease;
+    &:active {
+        filter: brightness(1.1);
+        transform: scale(0.95);
+    }
+    &:hover {
+        filter: brightness(1.1);
+    }
+}
+
+.favorite {
+    background-image: url('https://upload.cc/i1/2019/01/03/whfloW.png');
+}
+.del {
+    background-image: url('https://upload.cc/i1/2018/12/26/FDNEpG.png');
+}
+
+.list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.listCard {
+    flex: 0 0 49%;
+    margin-right: 2%;
+    margin-bottom: 2%;
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,0.20);
+    background-color: #fff;
+
+    &:nth-child(even) {
+        margin-right: 0;
+    }
+    .cardTop {
+        background-image: url(http://khh.travel/FileArtPic.ashx?id=2424&w=1280&h=960);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        padding: 20px;
+        height: 170px;
+        color: #fff;
+        position: relative;
+
+        h3 {
+            font-size: 2rem;
+        }
+        p {
+            font-size: 1.1rem;
+            position: absolute;
+            right: 20px;
+            bottom: 20px;
+        }
+    }
+    .cardBottom {
+        padding: 20px;
+        background-color: #fff;
+        position: relative;
+        >* {
+            margin-bottom: 10px;
+            font-size: 14px;
+        }
+        >:last-child {
+            margin-bottom: 0;
+            /* position: absolute; */
+            /* bottom: 20px; */
+            /* right: 20px; */
+            text-align: right;
+            margin-top: 15px;
+        }
+        >:nth-last-child(2) {
+            margin-bottom: 0;
+        }
+        .type {
+            color: rgb(170, 170, 170);
+        }
+    }
+}
+@media screen and (max-width: 414px) {
+    .listCard {
+        flex: 0 0 100%;
+        margin-right: 0px;
+    }
+}
+.time::before,
+.add::before,
+.tel::before,
+.type::before {
+    content: '';
+    display: inline-block;
+    margin-right: 10px;
+    vertical-align: bottom;
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+}
+.time::before {
+    background: url(https://hexschool.github.io/JavaScript_HomeWork/assets/icons_clock.png);    
+}
+.add::before {
+    background: url(https://hexschool.github.io/JavaScript_HomeWork/assets/icons_pin.png);
+}
+.tel::before {
+    background: url(https://hexschool.github.io/JavaScript_HomeWork/assets/icons_phone.png);
+}

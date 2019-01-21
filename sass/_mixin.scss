@@ -1,0 +1,17 @@
+//自動計算圖片寬高
+@mixin bg($img) {   
+  background: url("../images/#{$img}");
+  width: image-width("../images/#{$img}");  
+  height: image-height("../images/#{$img}");  
+}
+
+@mixin font-size($sizeVal) {
+  $remVal: $sizeVa / 13;
+  font-size: #{$remVal}rem;
+}
+
+@function pxToRem ($sizeVal) {
+  $remVal: $sizeVal / 13;
+  @return #{$remVal}rem;
+}
+

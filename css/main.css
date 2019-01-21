@@ -298,45 +298,48 @@ body {
   cursor: pointer;
   color: #fff;
   transition: 0.5s ease;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
-/* line 9, ../sass/_utilities.scss */
+/* line 13, ../sass/_utilities.scss */
 .btn:active {
   border: 2px solid #949494;
   transform: scale(0.95);
 }
-/* line 13, ../sass/_utilities.scss */
+/* line 17, ../sass/_utilities.scss */
 .btn:hover {
   opacity: 0.75;
 }
 
 @media (max-width: 768px) {
-  /* line 18, ../sass/_utilities.scss */
+  /* line 22, ../sass/_utilities.scss */
   .btn {
     width: 49%;
     margin-bottom: 5px;
   }
 }
-/* line 23, ../sass/_utilities.scss */
+/* line 27, ../sass/_utilities.scss */
 .btn-1 {
   background-color: #8A82CC;
 }
 
-/* line 26, ../sass/_utilities.scss */
+/* line 30, ../sass/_utilities.scss */
 .btn-2 {
   background-color: #FFA782;
 }
 
-/* line 29, ../sass/_utilities.scss */
+/* line 33, ../sass/_utilities.scss */
 .btn-3 {
   background-color: #F5D105;
 }
 
-/* line 32, ../sass/_utilities.scss */
+/* line 36, ../sass/_utilities.scss */
 .btn-4 {
   background-color: #559AC8;
 }
 
-/* line 35, ../sass/_utilities.scss */
+/* line 39, ../sass/_utilities.scss */
 #goTopBtn {
   background: url(https://hexschool.github.io/JavaScript_HomeWork/assets/btn_goTop.png);
   width: 24px;
@@ -346,7 +349,7 @@ body {
   cursor: pointer;
 }
 
-/* line 44, ../sass/_utilities.scss */
+/* line 48, ../sass/_utilities.scss */
 .favorite, .del {
   background-repeat: no-repeat;
   background-size: cover;
@@ -359,33 +362,33 @@ body {
   cursor: pointer;
   transition: 0.5s ease;
 }
-/* line 55, ../sass/_utilities.scss */
+/* line 59, ../sass/_utilities.scss */
 .favorite:active, .del:active {
   filter: brightness(1.1);
   transform: scale(0.95);
 }
-/* line 59, ../sass/_utilities.scss */
+/* line 63, ../sass/_utilities.scss */
 .favorite:hover, .del:hover {
   filter: brightness(1.1);
 }
 
-/* line 64, ../sass/_utilities.scss */
+/* line 68, ../sass/_utilities.scss */
 .favorite {
   background-image: url("https://upload.cc/i1/2019/01/03/whfloW.png");
 }
 
-/* line 67, ../sass/_utilities.scss */
+/* line 71, ../sass/_utilities.scss */
 .del {
   background-image: url("https://upload.cc/i1/2018/12/26/FDNEpG.png");
 }
 
-/* line 71, ../sass/_utilities.scss */
+/* line 75, ../sass/_utilities.scss */
 .list {
   display: flex;
   flex-wrap: wrap;
 }
 
-/* line 76, ../sass/_utilities.scss */
+/* line 80, ../sass/_utilities.scss */
 .listCard {
   flex: 0 0 49%;
   margin-right: 2%;
@@ -393,11 +396,11 @@ body {
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2);
   background-color: #fff;
 }
-/* line 83, ../sass/_utilities.scss */
+/* line 87, ../sass/_utilities.scss */
 .listCard:nth-child(even) {
   margin-right: 0;
 }
-/* line 86, ../sass/_utilities.scss */
+/* line 90, ../sass/_utilities.scss */
 .listCard .cardTop {
   background-image: url(http://khh.travel/FileArtPic.ashx?id=2424&w=1280&h=960);
   background-repeat: no-repeat;
@@ -408,29 +411,29 @@ body {
   color: #fff;
   position: relative;
 }
-/* line 96, ../sass/_utilities.scss */
+/* line 100, ../sass/_utilities.scss */
 .listCard .cardTop h3 {
   font-size: 2rem;
 }
-/* line 99, ../sass/_utilities.scss */
+/* line 103, ../sass/_utilities.scss */
 .listCard .cardTop p {
   font-size: 1.1rem;
   position: absolute;
   right: 20px;
   bottom: 20px;
 }
-/* line 106, ../sass/_utilities.scss */
+/* line 110, ../sass/_utilities.scss */
 .listCard .cardBottom {
   padding: 20px;
   background-color: #fff;
   position: relative;
 }
-/* line 110, ../sass/_utilities.scss */
+/* line 114, ../sass/_utilities.scss */
 .listCard .cardBottom > * {
   margin-bottom: 10px;
   font-size: 14px;
 }
-/* line 114, ../sass/_utilities.scss */
+/* line 118, ../sass/_utilities.scss */
 .listCard .cardBottom > :last-child {
   margin-bottom: 0;
   /* position: absolute; */
@@ -439,23 +442,23 @@ body {
   text-align: right;
   margin-top: 15px;
 }
-/* line 122, ../sass/_utilities.scss */
+/* line 126, ../sass/_utilities.scss */
 .listCard .cardBottom > :nth-last-child(2) {
   margin-bottom: 0;
 }
-/* line 125, ../sass/_utilities.scss */
+/* line 129, ../sass/_utilities.scss */
 .listCard .cardBottom .type {
   color: #aaaaaa;
 }
 
 @media screen and (max-width: 414px) {
-  /* line 131, ../sass/_utilities.scss */
+  /* line 135, ../sass/_utilities.scss */
   .listCard {
     flex: 0 0 100%;
     margin-right: 0px;
   }
 }
-/* line 136, ../sass/_utilities.scss */
+/* line 140, ../sass/_utilities.scss */
 .time::before,
 .add::before,
 .tel::before,
@@ -470,17 +473,17 @@ body {
   background-position: center !important;
 }
 
-/* line 149, ../sass/_utilities.scss */
+/* line 153, ../sass/_utilities.scss */
 .time::before {
   background: url(https://hexschool.github.io/JavaScript_HomeWork/assets/icons_clock.png);
 }
 
-/* line 152, ../sass/_utilities.scss */
+/* line 156, ../sass/_utilities.scss */
 .add::before {
   background: url(https://hexschool.github.io/JavaScript_HomeWork/assets/icons_pin.png);
 }
 
-/* line 155, ../sass/_utilities.scss */
+/* line 159, ../sass/_utilities.scss */
 .tel::before {
   background: url(https://hexschool.github.io/JavaScript_HomeWork/assets/icons_phone.png);
 }

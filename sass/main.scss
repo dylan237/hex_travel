@@ -1,0 +1,13 @@
+@import 'compass';
+@import '_variable';  //專門放變數
+@import '_mixin';  // mixin
+@import '_reset';  // reset 網頁用的css
+@import '_extend'; // 合併CSS用，裡面都是使用%的符號來取代class的「.」符號。
+@import '_layout'; //大架構
+@import '_index'; // 首頁樣式
+@import '_utilities';
+//icon sprite圖片合併
+$icon-layout: horizontal; //橫向排列
+$icon-spacing: 10px; //icon相連的間隔
+@import 'icon/*.png'; //icon=資料夾名稱
+@include all-icon-sprites;

@@ -1,0 +1,115 @@
+
+.header {
+    h1 {
+        color: #fff;
+        font-size: 40px;
+        padding: 30px 0;
+    }
+    select {
+        width: 250px;
+        height: 45px;
+        background-color: rgba(255, 255, 255, 0.7);
+        border: 3px solid #fff;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+.btnArea {
+    width: 70%;
+    position: absolute;
+    bottom: -70px;
+    left: 50%;
+    transform: translateX(-50%);
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: space-around;
+    // align-items: center;
+    padding: 15px;
+    background-color: #fff;
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,0.20);
+    border-radius: 5px;
+    h2 {
+        color: #000;
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+}
+@media screen and (max-width: 768px) {
+    .btnArea {
+        width: 100%;
+        bottom: 0;
+        border-radius: 0;
+        background-color: rgba(255, 255, 255, 0.9);
+    }
+    h2 {
+        display: none;
+    }
+}
+
+
+.btnArea-inner {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.decLine {
+    border-bottom: 2px dashed #559AC8;
+    height: 2px;
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+    .circle {
+        position: absolute;
+        left: 50%;
+        top: 0;
+        transform: translate(-50%,-50%);
+        height: 24px;
+        width: 24px;
+        background: #F7F7F7;
+        border: 2px solid #559AC8;
+        border-radius: 50%;
+        .symbol {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -30%);
+            width: 20px;
+            height: 10px;
+            overflow: hidden;
+            &::after {
+                content: '';
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                width: 9px;
+                height: 9px;
+                background: #559AC8;
+                transform: translate(-50%,-100%) rotate(45deg);
+            }
+        }
+    }
+}
+.areaTitle {
+    font-size: 36px;
+    color: #8A82CC;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.footer {
+    h2 {
+        margin-bottom: 10px;
+        color: #FFD366;
+    }
+}
+@media screen and (max-width: 768px) {
+    .decLine {
+        display: none;
+    }
+    .areaTitle {
+        display: none;
+    }
+}
